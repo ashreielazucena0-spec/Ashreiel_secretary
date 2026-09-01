@@ -29,6 +29,21 @@
             "voter": "Registered",
             "senior": "No",
             "pwd": "No"
+        },
+        {
+            "id": "R-003",
+            "first": "Ashreiel",
+            "middle": "Carreon",
+            "last": "Azucena",
+            "birth": "2005-05-12",
+            "sex": "Male",
+            "civil": "Single",
+            "contact": "09163983310",
+            "purok": "Purok Subis",
+            "occupation": "Student",
+            "voter": "Registered",
+            "senior": "No",
+            "pwd": "No"
         }
     ],
     "households": [
@@ -53,6 +68,14 @@
             "purpose": "School",
             "date": "2026-08-27",
             "amount": "100"
+        },
+        {
+            "id": "CERT-002",
+            "resident": "R-001",
+            "type": "Certificate of Indigency",
+            "purpose": "hospital",
+            "date": "2026-09-01",
+            "amount": "100"
         }
     ],
     "requests": [
@@ -62,7 +85,7 @@
             "type": "Certificate of Residency",
             "purpose": "School",
             "date": "2026-08-27",
-            "status": "Released"
+            "status": "Processing"
         }
     ],
     "cases": [
@@ -83,6 +106,13 @@
             "title": "Barangay Assembly",
             "date": "2026-08-30",
             "time": "09:00",
+            "venue": "Barangay Hall"
+        },
+        {
+            "id": "M-002",
+            "title": "Christmas Party",
+            "date": "2026-12-20",
+            "time": "13:00",
             "venue": "Barangay Hall"
         }
     ],
@@ -114,7 +144,7 @@
         },
         {
             "id": "O-002",
-            "name": "Maria Santos",
+            "name": "Mary Jane L. Gansad",
             "position": "Barangay Secretary",
             "term": "2023-2026",
             "contact": "09181234567"
@@ -134,7 +164,7 @@
             "username": "secretary",
             "name": "Maria Santos",
             "role": "Secretary",
-            "status": "Active",
+            "status": "Inactive",
             "password": "secretary123"
         },
         {
@@ -147,6 +177,126 @@
         }
     ],
     "logs": [
+        {
+            "time": "2026-09-01 06:58 AM",
+            "user": "admin",
+            "action": "Added a new record in Meetings & Events"
+        },
+        {
+            "time": "2026-09-01 06:51 AM",
+            "user": "admin",
+            "action": "Added a new record in Residents"
+        },
+        {
+            "time": "2026-09-01 06:47 AM",
+            "user": "admin",
+            "action": "Updated a record (O-001) in Officials"
+        },
+        {
+            "time": "2026-09-01 06:46 AM",
+            "user": "admin",
+            "action": "Updated a record (O-002) in Officials"
+        },
+        {
+            "time": "2026-09-01 06:45 AM",
+            "user": "admin",
+            "action": "Logged into the system"
+        },
+        {
+            "time": "2026-09-01 06:44 AM",
+            "user": "admin",
+            "action": "Logged out of the system"
+        },
+        {
+            "time": "2026-09-01 06:40 AM",
+            "user": "admin",
+            "action": "Logged into the system"
+        },
+        {
+            "time": "2026-09-01 06:39 AM",
+            "user": "admin",
+            "action": "Logged out of the system"
+        },
+        {
+            "time": "2026-09-01 06:33 AM",
+            "user": "admin",
+            "action": "Printed certificate (CERT-002)"
+        },
+        {
+            "time": "2026-09-01 06:32 AM",
+            "user": "admin",
+            "action": "Logged into the system"
+        },
+        {
+            "time": "2026-09-01 06:31 AM",
+            "user": "admin",
+            "action": "Logged out of the system"
+        },
+        {
+            "time": "2026-09-01 04:58 AM",
+            "user": "admin",
+            "action": "Printed certificate (CERT-002)"
+        },
+        {
+            "time": "2026-09-01 04:57 AM",
+            "user": "admin",
+            "action": "Printed certificate (CERT-002)"
+        },
+        {
+            "time": "2026-09-01 04:57 AM",
+            "user": "admin",
+            "action": "Added a new record in Certificates"
+        },
+        {
+            "time": "2026-09-01 04:54 AM",
+            "user": "admin",
+            "action": "Logged into the system"
+        },
+        {
+            "time": "2026-09-01 04:53 AM",
+            "user": "admin",
+            "action": "Logged out of the system"
+        },
+        {
+            "time": "2026-09-01 04:53 AM",
+            "user": "admin",
+            "action": "Deactivated user account (U-002)"
+        },
+        {
+            "time": "2026-09-01 04:53 AM",
+            "user": "admin",
+            "action": "Activated user account (U-003)"
+        },
+        {
+            "time": "2026-09-01 04:52 AM",
+            "user": "admin",
+            "action": "Deactivated user account (U-003)"
+        },
+        {
+            "time": "2026-09-01 04:52 AM",
+            "user": "admin",
+            "action": "Logged into the system"
+        },
+        {
+            "time": "2026-09-01 04:49 AM",
+            "user": "admin",
+            "action": "Logged out of the system"
+        },
+        {
+            "time": "2026-09-01 04:46 AM",
+            "user": "admin",
+            "action": "Updated a record (REQ-001) in Requests"
+        },
+        {
+            "time": "2026-09-01 04:46 AM",
+            "user": "admin",
+            "action": "Printed certificate (CERT-001)"
+        },
+        {
+            "time": "2026-09-01 04:42 AM",
+            "user": "admin",
+            "action": "Logged into the system"
+        },
         {
             "time": "2026-08-27 07:10 AM",
             "user": "wailhi",

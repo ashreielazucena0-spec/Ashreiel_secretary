@@ -54,7 +54,7 @@ class Barangay extends BaseController
                 'idPrefix' => 'CERT-',
                 'fields' => [
                     'resident' => ['label' => 'Resident', 'type' => 'select', 'options' => $residentOptions],
-                    'type'     => ['label' => 'Certificate Type', 'type' => 'select', 'options' => ['Barangay Clearance', 'Certificate of Residency', 'Certificate of Indigency', 'Business Clearance']],
+                    'type'     => ['label' => 'Certificate Type', 'type' => 'select', 'options' => ['Barangay Clearance', 'Certificate of Residency', 'Certificate of Indigency', 'Business Clearance', 'Barangay Certificate']],
                     'purpose'  => ['label' => 'Purpose', 'type' => 'text'],
                     'date'     => ['label' => 'Date Issued', 'type' => 'date'],
                     'amount'   => ['label' => 'Amount (₱)', 'type' => 'number'],

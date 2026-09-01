@@ -16,7 +16,7 @@
         <div class="auth-head">
             <div class="auth-logo"><img src="<?= base_url('images/logo.jpg') ?>" alt="Barangay Sumadat logo"></div>
             <h1>Barangay Sumadat</h1>
-            <p>Dumalinao, Zamboanga del Sur — Secretary System</p>
+            <p>Dumalinao, Zamboanga del Sur</p>
         </div>
 
         <?php $tab = session()->getFlashdata('activeTab') ?? ($activeTab ?? 'login'); ?>
@@ -81,7 +81,6 @@
                         <input class="form-control" name="password2" type="password" required minlength="6" autocomplete="new-password">
                     </div>
                     <button class="btn btn-gold w-100" type="submit">Create Account</button>
-                    <div class="demo-hint">New accounts start with the <b>Secretary/Staff</b> role. An administrator can promote or manage accounts under User Management.</div>
                 </form>
 
             </div>

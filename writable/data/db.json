@@ -1,0 +1,586 @@
+{
+    "residents": [
+        {
+            "id": "R-001",
+            "first": "Jay-en",
+            "middle": "rosal",
+            "last": "Pasco",
+            "birth": "2007-01-19",
+            "sex": "Male",
+            "civil": "Single",
+            "contact": "09940223962",
+            "purok": "Purok Falcata",
+            "occupation": "kawatan",
+            "voter": "Registered",
+            "senior": "No",
+            "pwd": "No"
+        },
+        {
+            "id": "R-002",
+            "first": "Jermie",
+            "middle": "Encarnacion",
+            "last": "Capadiso",
+            "birth": "2007-04-28",
+            "sex": "Female",
+            "civil": "Single",
+            "contact": "09317178781",
+            "purok": "Purok Acasia",
+            "occupation": "Teacher",
+            "voter": "Registered",
+            "senior": "No",
+            "pwd": "No"
+        },
+        {
+            "id": "R-003",
+            "first": "Ashreiel",
+            "middle": "Carreon",
+            "last": "Azucena",
+            "birth": "2005-05-12",
+            "sex": "Male",
+            "civil": "Single",
+            "contact": "09163983310",
+            "purok": "Purok Subis",
+            "occupation": "Student",
+            "voter": "Registered",
+            "senior": "No",
+            "pwd": "No"
+        }
+    ],
+    "households": [
+        {
+            "id": "HH-001",
+            "head": "R-001",
+            "purok": "Purok Falcata",
+            "members": "4"
+        },
+        {
+            "id": "HH-003",
+            "head": "R-002",
+            "purok": "Purok Malipayon",
+            "members": "2"
+        }
+    ],
+    "certificates": [
+        {
+            "id": "CERT-001",
+            "resident": "R-002",
+            "type": "Barangay Clearance",
+            "purpose": "School",
+            "date": "2026-08-27",
+            "amount": "100"
+        },
+        {
+            "id": "CERT-002",
+            "resident": "R-001",
+            "type": "Certificate of Indigency",
+            "purpose": "hospital",
+            "date": "2026-09-01",
+            "amount": "100"
+        }
+    ],
+    "requests": [
+        {
+            "id": "REQ-001",
+            "resident": "R-001",
+            "type": "Certificate of Residency",
+            "purpose": "School",
+            "date": "2026-08-27",
+            "status": "Processing"
+        }
+    ],
+    "cases": [
+        {
+            "id": "B-2026-001",
+            "complainant": "R-001",
+            "respondent": "R-001",
+            "nature": "sabaan",
+            "date": "2026-08-27",
+            "status": "Resolved",
+            "details": "",
+            "action": ""
+        }
+    ],
+    "meetings": [
+        {
+            "id": "M-001",
+            "title": "Barangay Assembly",
+            "date": "2026-08-30",
+            "time": "09:00",
+            "venue": "Barangay Hall"
+        },
+        {
+            "id": "M-002",
+            "title": "Christmas Party",
+            "date": "2026-12-20",
+            "time": "13:00",
+            "venue": "Barangay Hall"
+        }
+    ],
+    "documents": [
+        {
+            "id": "RES-2026-001",
+            "number": "RES-2026-001",
+            "title": "Waste Management Resolution",
+            "type": "Resolution",
+            "date": "2026-08-27"
+        }
+    ],
+    "payments": [
+        {
+            "id": "OR-001",
+            "resident": "R-001",
+            "type": "Barangay Clearance",
+            "amount": 50,
+            "date": "2026-08-27"
+        }
+    ],
+    "officials": [
+        {
+            "id": "O-001",
+            "name": "Juan Dela Cruz",
+            "position": "Punong Barangay",
+            "term": "2023-2026",
+            "contact": "09171234567"
+        },
+        {
+            "id": "O-002",
+            "name": "Mary Jane L. Gansad",
+            "position": "Barangay Secretary",
+            "term": "2023-2026",
+            "contact": "09181234567"
+        }
+    ],
+    "users": [
+        {
+            "id": "U-001",
+            "username": "admin",
+            "name": "Administrator",
+            "role": "Admin",
+            "status": "Active",
+            "password": "admin123"
+        },
+        {
+            "id": "U-002",
+            "username": "secretary",
+            "name": "Maria Santos",
+            "role": "Secretary",
+            "status": "Inactive",
+            "password": "secretary123"
+        },
+        {
+            "id": "U-003",
+            "username": "wailhi",
+            "name": "Ashreiel Azucena",
+            "role": "Secretary",
+            "status": "Active",
+            "password": "maogani"
+        }
+    ],
+    "logs": [
+        {
+            "time": "2026-09-01 06:58 AM",
+            "user": "admin",
+            "action": "Added a new record in Meetings & Events"
+        },
+        {
+            "time": "2026-09-01 06:51 AM",
+            "user": "admin",
+            "action": "Added a new record in Residents"
+        },
+        {
+            "time": "2026-09-01 06:47 AM",
+            "user": "admin",
+            "action": "Updated a record (O-001) in Officials"
+        },
+        {
+            "time": "2026-09-01 06:46 AM",
+            "user": "admin",
+            "action": "Updated a record (O-002) in Officials"
+        },
+        {
+            "time": "2026-09-01 06:45 AM",
+            "user": "admin",
+            "action": "Logged into the system"
+        },
+        {
+            "time": "2026-09-01 06:44 AM",
+            "user": "admin",
+            "action": "Logged out of the system"
+        },
+        {
+            "time": "2026-09-01 06:40 AM",
+            "user": "admin",
+            "action": "Logged into the system"
+        },
+        {
+            "time": "2026-09-01 06:39 AM",
+            "user": "admin",
+            "action": "Logged out of the system"
+        },
+        {
+            "time": "2026-09-01 06:33 AM",
+            "user": "admin",
+            "action": "Printed certificate (CERT-002)"
+        },
+        {
+            "time": "2026-09-01 06:32 AM",
+            "user": "admin",
+            "action": "Logged into the system"
+        },
+        {
+            "time": "2026-09-01 06:31 AM",
+            "user": "admin",
+            "action": "Logged out of the system"
+        },
+        {
+            "time": "2026-09-01 04:58 AM",
+            "user": "admin",
+            "action": "Printed certificate (CERT-002)"
+        },
+        {
+            "time": "2026-09-01 04:57 AM",
+            "user": "admin",
+            "action": "Printed certificate (CERT-002)"
+        },
+        {
+            "time": "2026-09-01 04:57 AM",
+            "user": "admin",
+            "action": "Added a new record in Certificates"
+        },
+        {
+            "time": "2026-09-01 04:54 AM",
+            "user": "admin",
+            "action": "Logged into the system"
+        },
+        {
+            "time": "2026-09-01 04:53 AM",
+            "user": "admin",
+            "action": "Logged out of the system"
+        },
+        {
+            "time": "2026-09-01 04:53 AM",
+            "user": "admin",
+            "action": "Deactivated user account (U-002)"
+        },
+        {
+            "time": "2026-09-01 04:53 AM",
+            "user": "admin",
+            "action": "Activated user account (U-003)"
+        },
+        {
+            "time": "2026-09-01 04:52 AM",
+            "user": "admin",
+            "action": "Deactivated user account (U-003)"
+        },
+        {
+            "time": "2026-09-01 04:52 AM",
+            "user": "admin",
+            "action": "Logged into the system"
+        },
+        {
+            "time": "2026-09-01 04:49 AM",
+            "user": "admin",
+            "action": "Logged out of the system"
+        },
+        {
+            "time": "2026-09-01 04:46 AM",
+            "user": "admin",
+            "action": "Updated a record (REQ-001) in Requests"
+        },
+        {
+            "time": "2026-09-01 04:46 AM",
+            "user": "admin",
+            "action": "Printed certificate (CERT-001)"
+        },
+        {
+            "time": "2026-09-01 04:42 AM",
+            "user": "admin",
+            "action": "Logged into the system"
+        },
+        {
+            "time": "2026-08-27 07:10 AM",
+            "user": "wailhi",
+            "action": "Updated a record (U-002) in User Management"
+        },
+        {
+            "time": "2026-08-27 07:10 AM",
+            "user": "wailhi",
+            "action": "Updated a record (U-002) in User Management"
+        },
+        {
+            "time": "2026-08-27 07:02 AM",
+            "user": "wailhi",
+            "action": "Updated a record (U-002) in User Management"
+        },
+        {
+            "time": "2026-08-27 07:02 AM",
+            "user": "wailhi",
+            "action": "Updated a record (U-002) in User Management"
+        },
+        {
+            "time": "2026-08-27 07:01 AM",
+            "user": "wailhi",
+            "action": "Updated a record (U-002) in User Management"
+        },
+        {
+            "time": "2026-08-27 07:01 AM",
+            "user": "wailhi",
+            "action": "Updated a record (U-002) in User Management"
+        },
+        {
+            "time": "2026-08-27 07:01 AM",
+            "user": "wailhi",
+            "action": "Logged into the system"
+        },
+        {
+            "time": "2026-08-27 07:01 AM",
+            "user": "wailhi",
+            "action": "Created a new account (Secretary)"
+        },
+        {
+            "time": "2026-08-27 07:00 AM",
+            "user": "admin",
+            "action": "Logged out of the system"
+        },
+        {
+            "time": "2026-08-27 06:54 AM",
+            "user": "admin",
+            "action": "Printed certificate (CERT-001)"
+        },
+        {
+            "time": "2026-08-27 06:47 AM",
+            "user": "admin",
+            "action": "Printed certificate (CERT-001)"
+        },
+        {
+            "time": "2026-08-27 06:47 AM",
+            "user": "admin",
+            "action": "Added a new record in Certificates"
+        },
+        {
+            "time": "2026-08-27 06:47 AM",
+            "user": "admin",
+            "action": "Deleted a record (CERT-001) from Certificates"
+        },
+        {
+            "time": "2026-08-27 06:46 AM",
+            "user": "admin",
+            "action": "Deleted a record (HH-002) from Households"
+        },
+        {
+            "time": "2026-08-27 06:46 AM",
+            "user": "admin",
+            "action": "Added a new record in Households"
+        },
+        {
+            "time": "2026-08-27 06:46 AM",
+            "user": "admin",
+            "action": "Added a new record in Residents"
+        },
+        {
+            "time": "2026-08-27 06:42 AM",
+            "user": "admin",
+            "action": "Printed certificate (CERT-001)"
+        },
+        {
+            "time": "2026-08-27 06:38 AM",
+            "user": "admin",
+            "action": "Printed certificate (CERT-001)"
+        },
+        {
+            "time": "2026-08-27 06:38 AM",
+            "user": "admin",
+            "action": "Logged into the system"
+        },
+        {
+            "time": "2026-08-27 03:04 AM",
+            "user": "admin",
+            "action": "Logged into the system"
+        },
+        {
+            "time": "2026-08-27 03:04 AM",
+            "user": "secretary",
+            "action": "Logged out of the system"
+        },
+        {
+            "time": "2026-08-27 03:04 AM",
+            "user": "secretary",
+            "action": "Logged into the system"
+        },
+        {
+            "time": "2026-08-27 03:04 AM",
+            "user": "admin",
+            "action": "Logged out of the system"
+        },
+        {
+            "time": "2026-08-27 03:04 AM",
+            "user": "admin",
+            "action": "Updated a record (U-002) in User Management"
+        },
+        {
+            "time": "2026-08-27 03:03 AM",
+            "user": "admin",
+            "action": "Logged into the system"
+        },
+        {
+            "time": "2026-08-27 03:03 AM",
+            "user": "admin",
+            "action": "Logged out of the system"
+        },
+        {
+            "time": "2026-08-27 03:03 AM",
+            "user": "admin",
+            "action": "Updated a record (U-002) in User Management"
+        },
+        {
+            "time": "2026-08-27 02:59 AM",
+            "user": "admin",
+            "action": "Updated a record (CERT-001) in Certificates"
+        },
+        {
+            "time": "2026-08-27 02:58 AM",
+            "user": "admin",
+            "action": "Updated a record (B-2026-001) in Complaints / Blotter"
+        },
+        {
+            "time": "2026-08-27 02:58 AM",
+            "user": "admin",
+            "action": "Added a new record in Complaints / Blotter"
+        },
+        {
+            "time": "2026-08-27 02:57 AM",
+            "user": "admin",
+            "action": "Updated a record (REQ-001) in Requests"
+        },
+        {
+            "time": "2026-08-27 02:56 AM",
+            "user": "admin",
+            "action": "Updated a record (REQ-001) in Requests"
+        },
+        {
+            "time": "2026-08-27 02:55 AM",
+            "user": "admin",
+            "action": "Updated a record (CERT-001) in Certificates"
+        },
+        {
+            "time": "2026-08-27 02:55 AM",
+            "user": "admin",
+            "action": "Updated a record (CERT-001) in Certificates"
+        },
+        {
+            "time": "2026-08-27 02:54 AM",
+            "user": "admin",
+            "action": "Added a new record in Certificates"
+        },
+        {
+            "time": "2026-08-27 02:53 AM",
+            "user": "admin",
+            "action": "Updated a record (HH-001) in Households"
+        },
+        {
+            "time": "2026-08-27 02:53 AM",
+            "user": "admin",
+            "action": "Added a new record in Residents"
+        },
+        {
+            "time": "2026-08-27 02:51 AM",
+            "user": "admin",
+            "action": "Logged into the system"
+        },
+        {
+            "time": "2026-08-27 02:51 AM",
+            "user": "admin",
+            "action": "Logged out of the system"
+        },
+        {
+            "time": "2026-08-27 02:50 AM",
+            "user": "admin",
+            "action": "Deleted a record (B-2026-001) from Complaints / Blotter"
+        },
+        {
+            "time": "2026-08-27 02:44 AM",
+            "user": "admin",
+            "action": "Deleted a record (CERT-001) from Certificates"
+        },
+        {
+            "time": "2026-08-27 02:43 AM",
+            "user": "admin",
+            "action": "Updated a record (REQ-001) in Requests"
+        },
+        {
+            "time": "2026-08-27 02:41 AM",
+            "user": "admin",
+            "action": "Logged into the system"
+        },
+        {
+            "time": "2026-08-27 02:41 AM",
+            "user": "secretary",
+            "action": "Logged out of the system"
+        },
+        {
+            "time": "2026-08-27 02:41 AM",
+            "user": "secretary",
+            "action": "Logged into the system"
+        },
+        {
+            "time": "2026-08-27 02:40 AM",
+            "user": "admin",
+            "action": "Logged out of the system"
+        },
+        {
+            "time": "2026-08-27 02:40 AM",
+            "user": "admin",
+            "action": "Updated a record (U-002) in User Management"
+        },
+        {
+            "time": "2026-08-27 02:40 AM",
+            "user": "admin",
+            "action": "Logged into the system"
+        },
+        {
+            "time": "2026-08-27 02:39 AM",
+            "user": "admin",
+            "action": "Logged out of the system"
+        },
+        {
+            "time": "2026-08-27 02:39 AM",
+            "user": "admin",
+            "action": "Updated a record (U-002) in User Management"
+        },
+        {
+            "time": "2026-08-27 02:38 AM",
+            "user": "admin",
+            "action": "Logged into the system"
+        },
+        {
+            "time": "2026-08-27 02:38 AM",
+            "user": "admin",
+            "action": "Logged out of the system"
+        },
+        {
+            "time": "2026-08-27 02:38 AM",
+            "user": "admin",
+            "action": "Deleted a record (R-002) from Residents"
+        },
+        {
+            "time": "2026-08-27 02:38 AM",
+            "user": "admin",
+            "action": "Deleted a record (R-001) from Residents"
+        },
+        {
+            "time": "2026-08-27 02:38 AM",
+            "user": "admin",
+            "action": "Deleted a record (R-003) from Residents"
+        },
+        {
+            "time": "2026-08-27 02:37 AM",
+            "user": "admin",
+            "action": "Reset the system to demo data"
+        },
+        {
+            "time": "2026-08-27 02:37 AM",
+            "user": "system",
+            "action": "Database initialized"
+        }
+    ]
+}

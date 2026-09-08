@@ -153,6 +153,21 @@ class Barangay extends BaseController
         ];
     }
 
+    /**
+     * Defense-in-depth guard for admin-only actions (user management,
+     * backup & restore). The 'admin' route filter is the primary gate;
+     * this catches anything that reaches these methods some other way.
+     */
+    protected function requireAdmin(): ?RedirectResponse
+    {
+        if (strcasecmp((string) session()->get('role'), 'Admin') !== 0) {
+            return redirect()->to(site_url('barangay/dashboard'))
+                ->with('error', 'That area is restricted to administrator accounts.');
+        }
+
+        return null;
+    }
+
     protected function optionMap(string $table, callable $labelFn): array
     {
         $options = [];
@@ -243,6 +258,10 @@ class Barangay extends BaseController
 
     public function backup()
     {
+        if ($block = $this->requireAdmin()) {
+            return $block;
+        }
+
         return view('barangay/backup', [
             'pageTitle' => 'Backup & Restore',
             'active'    => 'backup',
@@ -251,6 +270,10 @@ class Barangay extends BaseController
 
     public function backupExport()
     {
+        if ($block = $this->requireAdmin()) {
+            return $block;
+        }
+
         DataStore::log(session()->get('username') ?? 'unknown', 'Exported a system backup');
         return $this->response
             ->setHeader('Content-Type', 'application/json')
@@ -260,6 +283,10 @@ class Barangay extends BaseController
 
     public function backupImport()
     {
+        if ($block = $this->requireAdmin()) {
+            return $block;
+        }
+
         $file = $this->request->getFile('backupFile');
         if (! $file || ! $file->isValid()) {
             return redirect()->to(site_url('barangay/backup'))->with('error', 'Please choose a valid backup file.');
@@ -276,6 +303,10 @@ class Barangay extends BaseController
 
     public function backupReset()
     {
+        if ($block = $this->requireAdmin()) {
+            return $block;
+        }
+
         DataStore::reset();
         DataStore::log(session()->get('username') ?? 'unknown', 'Reset the system to demo data');
         return redirect()->to(site_url('barangay/backup'))->with('success', 'System data has been reset to the demo dataset.');
@@ -290,6 +321,10 @@ class Barangay extends BaseController
         $schemas = $this->schemas();
         if (! isset($schemas[$module])) {
             throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
+        }
+
+        if ($module === 'users' && ($block = $this->requireAdmin())) {
+            return $block;
         }
 
         $schema = $schemas[$module];
@@ -334,6 +369,11 @@ class Barangay extends BaseController
         if (! isset($schemas[$module])) {
             throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
         }
+
+        if ($module === 'users' && ($block = $this->requireAdmin())) {
+            return $block;
+        }
+
         $schema = $schemas[$module];
 
         $row = ['id' => DataStore::nextId($module, $schema['idPrefix'])];
@@ -353,6 +393,11 @@ class Barangay extends BaseController
         if (! isset($schemas[$module])) {
             throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
         }
+
+        if ($module === 'users' && ($block = $this->requireAdmin())) {
+            return $block;
+        }
+
         $schema = $schemas[$module];
 
         $changes = [];
@@ -389,6 +434,10 @@ class Barangay extends BaseController
 
     public function toggleUserStatus(string $id)
     {
+        if ($block = $this->requireAdmin()) {
+            return $block;
+        }
+
         $user = DataStore::find('users', $id);
         if (! $user) {
             throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
@@ -413,6 +462,11 @@ class Barangay extends BaseController
         if (! isset($schemas[$module])) {
             throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
         }
+
+        if ($module === 'users' && ($block = $this->requireAdmin())) {
+            return $block;
+        }
+
         $schema = $schemas[$module];
 
         if ($module === 'users' && $id === session()->get('userId')) {

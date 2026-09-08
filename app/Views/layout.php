@@ -64,18 +64,22 @@
             <a href="<?= base_url('barangay/officials') ?>" class="menu-item <?= ($active ?? '') === 'officials' ? 'active' : '' ?>">
                 <i class="bi bi-person-badge"></i><span>Officials</span>
             </a>
+            <?php if (strcasecmp((string) session()->get('role'), 'Admin') === 0): ?>
             <a href="<?= base_url('barangay/users') ?>" class="menu-item <?= ($active ?? '') === 'users' ? 'active' : '' ?>">
                 <i class="bi bi-person-lock"></i><span>User Management</span>
             </a>
+            <?php endif; ?>
 
             <small class="menu-title mt-4">SYSTEM</small>
 
             <a href="<?= base_url('barangay/activity-logs') ?>" class="menu-item <?= ($active ?? '') === 'activity_logs' ? 'active' : '' ?>">
                 <i class="bi bi-clock-history"></i><span>Activity Logs</span>
             </a>
+            <?php if (strcasecmp((string) session()->get('role'), 'Admin') === 0): ?>
             <a href="<?= base_url('barangay/backup') ?>" class="menu-item <?= ($active ?? '') === 'backup' ? 'active' : '' ?>">
                 <i class="bi bi-database"></i><span>Backup &amp; Restore</span>
             </a>
+            <?php endif; ?>
             <a href="<?= base_url('logout') ?>" class="menu-item">
                 <i class="bi bi-box-arrow-right"></i><span>Log Out</span>
             </a>

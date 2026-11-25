@@ -1,0 +1,60 @@
+# Dependencies
+/vendor/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# CodeIgniter writable runtime data
+/writable/*
+!/writable/index.html
+!/writable/cache/
+!/writable/data/
+!/writable/debugbar/
+!/writable/logs/
+!/writable/session/
+!/writable/uploads/
+
+/writable/cache/*
+!/writable/cache/index.html
+/writable/data/*
+!/writable/data/index.html
+/writable/debugbar/*
+!/writable/debugbar/index.html
+/writable/logs/*
+!/writable/logs/index.html
+/writable/session/*
+!/writable/session/index.html
+/writable/uploads/*
+!/writable/uploads/index.html
+
+# Tests and coverage
+/build/
+/coverage/
+.phpunit.result.cache
+.phpunit.cache/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# OS-generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
